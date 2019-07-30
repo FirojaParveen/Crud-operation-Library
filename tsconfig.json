@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-crud-operation-lib": [
+        "dist/ngx-crud-operation-lib"
+      ],
+      "ngx-crud-operation-lib/*": [
+        "dist/ngx-crud-operation-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

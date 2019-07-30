@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgxCrudOperationLibComponent } from 'projects/ngx-crud-operation-lib/src/public-api';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'crud-operation';
+
 }

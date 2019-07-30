@@ -115,6 +115,41 @@
           }
         }
       }
+    },
+    "ngx-crud-operation-lib": {
+      "projectType": "library",
+      "root": "projects/ngx-crud-operation-lib",
+      "sourceRoot": "projects/ngx-crud-operation-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-crud-operation-lib/tsconfig.lib.json",
+            "project": "projects/ngx-crud-operation-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-crud-operation-lib/src/test.ts",
+            "tsConfig": "projects/ngx-crud-operation-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-crud-operation-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-crud-operation-lib/tsconfig.lib.json",
+              "projects/ngx-crud-operation-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "crud-operation"
 }

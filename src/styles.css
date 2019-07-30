@@ -1,1 +1,189 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  color: #4D4651;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.form-control:focus {
+  border-color: #ced4da;
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.btn.btn-primary {
+  background-color: #01B9BB;
+  border-color: #01B9BB;
+  color: #fff;
+  font-weight: 400;
+}
+
+  .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+    background-color: #3E9091;
+    border-color: #3E9091;
+  }
+
+    .btn.btn-primary:active:hover, .btn.btn-primary:active:focus {
+      background-color: #3E9091;
+      border-color: #3E9091;
+    }
+
+  .btn.btn-primary.disabled, .btn.btn-primary:disabled {
+    background-color: #01B9BB;
+    border-color: #01B9BB;
+    opacity: 0.5;
+    cursor: no-drop;
+  }
+
+
+.danger-text {
+  color: #DD2C00;
+}
+/*Navbar*/
+.navbar {
+  background-image: linear-gradient(to right, #343a40, #717777);
+}
+
+  .navbar a {
+    color: #fff;
+  }
+
+    .navbar a:not([href]), .navbar a:not([href]):focus, .navbar a:not([href]):hover {
+      color: #fff;
+    }
+
+  .navbar .list-link {
+    background-color: #fff;
+    color: #4D4651;
+    padding: 10px;
+    border: 1px solid #4D4651;
+    border-radius: 4px;
+  }
+
+.main-content {
+  padding: 20px 0;
+}
+
+/*Employee List*/
+.list-container {
+  padding: 20px;
+  border: 1px solid #ededed;
+  min-height: 400px;
+  background-color: #f9f9f9;
+  margin: 20px 0;
+}
+
+  .list-container .material-icons {
+    font-size: 20px;
+    color: #4D4651;
+  }
+
+  .list-container .table {
+    color: #4D4651;
+  }
+  .list-container .table tr {
+    border-bottom: 1px solid #ededed;
+  }
+    .list-container .table tbody tr:last-child {
+      border-bottom: none;
+    }
+.list-container table td, .list-container table th {
+  border: none !important;
+}
+
+.list-container button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+  .list-container button:focus {
+    outline: 0;
+  }
+/*add employee form*/
+.form-area {
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 20px;
+  min-height: 400px;
+  background-color: #f9f9f9;
+}
+
+.errors-container {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 16px;
+  min-width: 1px;
+}
+
+  .errors-container .error-msg {
+    display: block;
+    color: #DD2C00;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 600;
+    padding-top: 2px;
+  }
+
+.form-area .form-group {
+  margin-bottom: 0;
+}
+
+.form-area .cancel-btn {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.form-area .btn {
+  min-width: 120px;
+  padding: 8px;
+}
+
+.form-area .cancel-btn:hover, .form-area .cancel-btn:focus {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
